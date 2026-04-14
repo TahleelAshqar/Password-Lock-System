@@ -3,13 +3,13 @@ INCLUDE <P16F877.INC>
 __CONFIG _CP_OFF & _WDT_OFF & _BODEN_OFF & _PWRTE_OFF & _HS_OSC & _WRT_ENABLE_ON & _LVP_OFF & _DEBUG_OFF & _CPD_OFF
 
 
-;Password Storage:
+; Password Storage:
 IN_1         EQU 0x30 ; EQU = a bit in storage
 IN_2         EQU 0x31
 IN_3         EQU 0x32
 IN_4         EQU 0x33
-ATTEMPTS     EQU 0x29 ; counts how many wrong passward we have pressed
-TEMP_BYTE    EQU 0x20 ; store char to help convert to LCD
+ATTEMPTS     EQU 0x29; counts how many wrong passwords we have pressed
+TEMP_BYTE    EQU 0x20; store char to help convert to LCD
 
 D1           EQU 0x22 ; מונה ל delay func
 D2           EQU 0x23 ; מונה ל delay func
